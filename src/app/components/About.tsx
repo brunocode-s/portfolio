@@ -45,7 +45,7 @@ const About = () => {
                 <div className="w-80 h-80 bg-gradient-to-br from-primary-200 to-primary-400 rounded-full flex items-center justify-center">
                   <div className="w-72 h-72 bg-white rounded-full flex items-center justify-center">
                     <Image
-                      src="/images/my_profile.jpeg"
+                      src="/assets/my_profile.jpeg"
                       alt="Profile Picture"
                       width={280}
                       height={150}

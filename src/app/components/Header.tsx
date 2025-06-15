@@ -29,7 +29,7 @@ const Header = () => {
     }`}>
       <div className="container-max-width section-padding">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="text-xl font-bold text-primary-600">
+          <a href="https://github.com/brunocode-s" className="text-xl font-bold text-primary-600">
             Alain Bruno
           </a>
 

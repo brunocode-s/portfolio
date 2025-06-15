@@ -19,14 +19,14 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <a
               href="#contact"
-              className="bg-primary-600 px-8 py-3 rounded-lg hover:bg-primary-700 transition-colors flex items-center gap-2"
+              className="bg-primary-600 px-8 py-3 rounded-lg hover:bg-primary-700 hover:border-2 hover:border-primary-600 transition-colors flex items-center gap-2"
             >
               <Mail size={20} />
               Get In Touch
             </a>
             <a
-              href="/resume.pdf"
-              className="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-lg hover:bg-primary-600 hover:text-white transition-colors flex items-center gap-2"
+              href="/assets/ALAINresume.pdf"
+              className="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-lg hover:bg-primary-600 hover:text-gray-700 hover:border-none hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2"
             >
               <Download size={20} />
               Download Resume
