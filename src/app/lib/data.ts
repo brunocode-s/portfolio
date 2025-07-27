@@ -9,7 +9,7 @@ export const projects: Project[] = [
     technologies: ['React', 'Tailwind CSS', 'Socket.io', 'PostgreSQL', 'Node.js', 'Express'],
     githubUrl: 'https://github.com/brunocode-s/OVS-frontend.git',
     liveUrl: 'https://ovs-frontend-drab.vercel.app/',
-    imageUrl: '/images/ovs.png',
+    imageUrl: '/assets/ovs.png',
   },
   {
     id: '2',
