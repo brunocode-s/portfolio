@@ -15,10 +15,10 @@ const Footer = () => {
   const formattedTime = dateTime.toLocaleTimeString();
   const year = dateTime.getFullYear();
 
-  const footerText = `© ${year} Alain Bruno • ${formattedTime} • alainbrunoofficial@gmail.com • Portfolio: brunocode-s • GitHub: brunocode-s • LinkedIn: in/alainbruno`;
+  const footerText = `© ${year} Alain Bruno • ${formattedTime} • alainbrunoofficial@gmail.com • Portfolio: alain-bruno-portfolio.vercel.app • GitHub: brunocode-s • linkedin.com/in/bruno-alain-269143266`;
 
   return (
-    <footer className="w-full h-6 bg-gray-900 overflow-hidden relative">
+    <footer className="w-full h-6 adaptive-text overflow-hidden relative">
       <div className="absolute whitespace-nowrap animate-marquee text-gray-300 text-[15px]">
         {footerText}
       </div>

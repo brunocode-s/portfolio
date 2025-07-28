@@ -35,26 +35,26 @@ export const experiences: Experience[] = [
   {
     id: '1',
     company: 'Digital Figures Services Enterprises.',
-    position: 'Senior Frontend Developer',
+    position: 'Intern Frontend Developer',
     duration: '2024 - Present',
     description: [
       'Led development of customer-facing web applications serving 100K+ users',
       'Mentored junior developers and established coding standards',
       'Implemented performance optimizations reducing load times by 40%',
     ],
-    technologies: ['React', 'TypeScript', 'Next.js', 'GraphQL'],
+    technologies: ['React', 'TypeScript'],
   },
   {
     id: '2',
     company: 'Digital Solutions Ltd.',
     position: 'Full Stack Developer',
-    duration: '2020 - 2022',
+    duration: '2025',
     description: [
       'Built and maintained multiple client projects using modern web technologies',
       'Collaborated with design teams to implement pixel-perfect UI components',
       'Developed RESTful APIs and database schemas',
     ],
-    technologies: ['React', 'Node.js', 'MongoDB', 'AWS'],
+    technologies: ['React', 'Node.js', '', ''],
   },
 ];
 
@@ -65,10 +65,10 @@ export const skills: Skill[] = [
   },
   {
     category: 'Backend',
-    technologies: ['Node.js', 'Express', 'Python', 'PostgreSQL', 'MongoDB'],
+    technologies: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB'],
   },
   {
     category: 'Tools & Other',
-    technologies: ['Git', 'Docker', 'AWS', 'Figma', 'Jest'],
+    technologies: ['Git', 'Docker', 'AWS', 'Figma'],
   },
 ];

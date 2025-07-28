@@ -27,10 +27,10 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-white animated-gradient">
       <div className="container-max-width section-padding">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Get In Touch
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-white max-w-2xl mx-auto">
             I&apos;m always open to discussing new opportunities and interesting projects
           </p>
         </div>
@@ -38,10 +38,10 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+              <h3 className="text-2xl font-semibold text-white mb-6">
                 Let&apos;s Connect
               </h3>
-              <p className="text-gray-600 mb-8">
+              <p className="text-white mb-8">
                 Feel free to reach out if you&apos;re looking for a developer, have a question, 
                 or just want to connect.
               </p>
@@ -50,11 +50,11 @@ const Contact = () => {
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="bg-primary-100 p-3 rounded-lg">
-                  <Mail className="text-primary-600" size={20} />
+                  <Mail className="text-white" size={20} />
                 </div>
                 <div>
-                  <p className="font-medium text-gray-900">Email</p>
-                  <a href="mailto:john@example.com" className="text-gray-600 hover:text-primary-600">
+                  <p className="font-medium text-white">Email</p>
+                  <a href="mailto:john@example.com" className="text-white hover:text-primary-600">
                     alainbrunoofficial@gmail.com
                   </a>
                 </div>
@@ -62,11 +62,11 @@ const Contact = () => {
 
               <div className="flex items-center gap-4">
                 <div className="bg-primary-100 p-3 rounded-lg">
-                  <Phone className="text-primary-600" size={20} />
+                  <Phone className="text-white" size={20} />
                 </div>
                 <div>
-                  <p className="font-medium text-gray-900">Phone</p>
-                  <a href="tel:+1234567890" className="text-gray-600 hover:text-primary-600">
+                  <p className="font-medium text-white">Phone</p>
+                  <a href="tel:+234 (816) 440-7328" className="text-white hover:text-primary-600">
                     +234 (816) 440-7328
                   </a>
                 </div>
@@ -74,11 +74,11 @@ const Contact = () => {
 
               <div className="flex items-center gap-4">
                 <div className="bg-primary-100 p-3 rounded-lg">
-                  <MapPin className="text-primary-600" size={20} />
+                  <MapPin className="text-white" size={20} />
                 </div>
                 <div>
-                  <p className="font-medium text-gray-900">Location</p>
-                  <p className="text-gray-600">Oyo, NG</p>
+                  <p className="font-medium text-white">Location</p>
+                  <p className="text-white">Oyo, NG</p>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@ const Contact = () => {
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
                 Name
               </label>
               <input
@@ -102,7 +102,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                 Email
               </label>
               <input
@@ -118,7 +118,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
                 Message
               </label>
               <textarea
@@ -132,14 +132,15 @@ const Contact = () => {
                    focus:border-transparent resize-none"
               />
             </div>
-
-            <button
-              type="submit"
-              className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-primary-700 transition-colors flex items-center gap-2"
-            >
-              <Send size={20} />
-              Send Message
-            </button>
+            <div className="flex justify-end">
+              <button
+                type="submit"
+                className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-primary-700 transition-colors flex items-center gap-2 hover:bg-white hover:text-gray-900 adaptive-text"
+              >
+                <Send size={20} />
+                Send Message
+              </button>
+            </div>
           </form>
         </div>
       </div>

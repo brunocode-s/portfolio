@@ -21,8 +21,13 @@
 }
 
 @layer utilities {
+  .adaptive-text {
+    mix-blend-mode: difference;
+    color: white;
+  }
+
   .animated-gradient {
-    background: linear-gradient(-45deg, #d0f4de, #a9def9, #e4c1f9, #f694c1);
+    background: linear-gradient(-45deg, #1e3a8a 0%, #3b0764 50%, #0f0f0f 100%);
     background-size: 400% 400%;
     animation: gradientShift 15s ease infinite;
   }
@@ -35,7 +40,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(125deg, #a9def9 0%, #d0f4de 50%, #f694c1 100%);
+    /* background: linear-gradient(125deg, #a9def9 0%, #d0f4de 50%, #f694c1 100%); */
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 0%);
     z-index: -1;
   }
@@ -44,9 +49,31 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(225deg, #e4c1f9 0%, #f694c1 50%, #a9def9 100%);
+    /* background: linear-gradient(225deg, #1e3a8a 0%, #3b0764 50%, #0f0f0f 100%); */
     clip-path: polygon(0 100%, 100% 50%, 100% 100%);
     z-index: -2;
+  }
+
+  .dark .animated-gradient {
+    background: linear-gradient(-45deg, #000000, #111111, #1e1e1e, #000000);
+  }
+
+  .diagonal-split::before {
+    background: linear-gradient(125deg, #a9def9 0%, #d0f4de 50%, #f694c1 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 0%);
+  }
+
+  .dark .diagonal-split::before {
+    background: linear-gradient(125deg, #0f172a, #1e293b, #111827);
+  }
+
+  .diagonal-split::after {
+    background: linear-gradient(225deg, #1e3a8a 0%, #3b0764 50%, #0f0f0f 100%);
+    clip-path: polygon(0 100%, 100% 50%, 100% 100%);
+  }
+
+  .dark .diagonal-split::after {
+    background: linear-gradient(225deg, #0f0f0f, #1a1a1a, #111111);
   }
 }
 
