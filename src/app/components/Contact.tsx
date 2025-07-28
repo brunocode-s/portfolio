@@ -132,10 +132,10 @@ const Contact = () => {
                    focus:border-transparent resize-none"
               />
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-end adaptive-text">
               <button
                 type="submit"
-                className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-primary-700 transition-colors flex items-center gap-2 hover:bg-white hover:text-gray-900 adaptive-text"
+                className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-primary-700 transition-colors flex items-center gap-2 hover:bg-white hover:text-gray-900 adaptive-text btn-b"
               >
                 <Send size={20} />
                 Send Message

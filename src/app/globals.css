@@ -23,7 +23,7 @@
 @layer utilities {
   .adaptive-text {
     mix-blend-mode: difference;
-    color: white;
+    color: #ffffff;
   }
 
   .animated-gradient {
@@ -74,6 +74,11 @@
 
   .dark .diagonal-split::after {
     background: linear-gradient(225deg, #0f0f0f, #1a1a1a, #111111);
+  }
+
+  .dark .btn-b {
+    background-color: #ffffff;
+    color: #000000;
   }
 }
 

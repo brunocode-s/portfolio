@@ -2,7 +2,7 @@ import { skills } from '../lib/data'
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-gray-50">
+    <section id="skills" className="py-20 bg-gray-100">
       <div className="container-max-width section-padding">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

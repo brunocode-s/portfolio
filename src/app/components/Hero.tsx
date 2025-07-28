@@ -8,23 +8,23 @@ const Hero = () => {
       <div className="container-max-width section-padding text-center">
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Hi, I&apos;m <span className="text-primary-600">Alain Bruno</span>
+            Hi, I&apos;m <span className="text-primary-600 adaptive-text">Alain Bruno</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto adaptive-text">
             A passionate FRONT-END Developer creating amazing web experiences
             with modern technologies and clean code.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <a
               href="#contact"
-              className="bg-primary-600 text-gray-600 px-8 py-3 rounded-lg hover:border-2 hover:bg-primary-700 hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2 transform-gpu"
+              className="bg-primary-600 text-gray-600 px-8 py-3 rounded-lg hover:border-2 hover:bg-primary-700 hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2 transform-gpu adaptive-text"
             >
               <Mail size={20} />
               Get In Touch
             </a>
             <a
               href="/assets/ALAINresume.pdf"
-              className="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-lg hover:bg-primary-600 hover:text-gray-600 hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2 transform-gpu"
+              className="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-lg hover:bg-primary-600 hover:text-gray-600 hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2 transform-gpu adaptive-text"
             >
               <Download size={20} />
               Download Resume
@@ -45,14 +45,14 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-gray-600 hover:text-primary-600 transition-colors"
+              className="text-gray-600 hover:text-primary-600 transition-colors adaptive-text"
             >
               <Linkedin size={24} />
             </a>
             <a
               href="mailto:alainbrunoofficial@gmail.com"
               aria-label="Email"
-              className="text-gray-600 hover:text-primary-600 transition-colors"
+              className="text-gray-600 hover:text-primary-600 transition-colors adaptive-text"
             >
               <Mail size={24} />
             </a>

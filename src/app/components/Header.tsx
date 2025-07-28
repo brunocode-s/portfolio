@@ -40,7 +40,7 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-600 hover:text-primary-600 transition-colors underline-hover"
+                className="text-[18px] hover:text-primary-600 underline-hove adaptive-text"
               >
                 {item.label}
               </a>
@@ -50,7 +50,7 @@ const Header = () => {
           <div className="flex items-center">
             <DarkModeToggle />
             <button
-              className="md:hidden"
+              className="md:hidden adaptive-text"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}

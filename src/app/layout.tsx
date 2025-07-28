@@ -7,7 +7,7 @@ export const metadata = {
   title: 'Alain Bruno - FRONT-END Developer',
   description: 'Portfolio website of Alain Bruno, a passionate full-stack developer specializing in modern web technologies.',
   icons: {
-   icon: '/assets/favicon.ico', 
+   icon: '/favicon.ico', 
   },
 }
 
