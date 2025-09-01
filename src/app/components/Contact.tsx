@@ -97,7 +97,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 text-white border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400
-                  focus:border-transparent text-white"
+                  focus:border-transparent"
               />
             </div>
 
@@ -135,7 +135,7 @@ const Contact = () => {
             <div className="flex justify-end adaptive-text">
               <button
                 type="submit"
-                className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-primary-700 transition-colors flex items-center gap-2 hover:bg-white hover:text-gray-900 adaptive-text"
+                className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-primary-700 transition-colors flex items-center gap-2 hover:bg-white hover:text-gray-900 adaptive-text btn-b"
               >
                 <Send size={20} />
                 Send Message

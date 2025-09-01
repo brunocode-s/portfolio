@@ -11,24 +11,24 @@ export const projects: Project[] = [
     liveUrl: 'https://ovs-frontend-drab.vercel.app/',
     imageUrl: '/assets/ovs.png',
   },
-  {
-    id: '2',
-    title: 'Task Management App',
-    description: 'Collaborative task management application with real-time updates and team collaboration features.',
-    technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Express'],
-    githubUrl: 'https://github.com/yourusername/taskmanager',
-    liveUrl: 'https://taskmanager-demo.vercel.app',
-    // imageUrl: '/images/taskmanager.png',
-  },
-  {
-    id: '3',
-    title: 'Weather Dashboard',
-    description: 'Interactive weather dashboard with location-based forecasts and historical data visualization.',
-    technologies: ['Vue.js', 'TypeScript', 'Chart.js', 'Weather API'],
-    githubUrl: 'https://github.com/yourusername/weather',
-    liveUrl: 'https://weather-dashboard-demo.vercel.app',
-    // imageUrl: '/images/weather-dashboard.png',
-  },
+  // {
+  //   id: '2',
+  //   title: 'Task Management App',
+  //   description: 'Collaborative task management application with real-time updates and team collaboration features.',
+  //   technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Express'],
+  //   githubUrl: 'https://github.com/yourusername/taskmanager',
+  //   liveUrl: 'https://taskmanager-demo.vercel.app',
+  //   // imageUrl: '/images/taskmanager.png',
+  // },
+  // {
+  //   id: '3',
+  //   title: 'Weather Dashboard',
+  //   description: 'Interactive weather dashboard with location-based forecasts and historical data visualization.',
+  //   technologies: ['Vue.js', 'TypeScript', 'Chart.js', 'Weather API'],
+  //   githubUrl: 'https://github.com/yourusername/weather',
+  //   liveUrl: 'https://weather-dashboard-demo.vercel.app',
+  //   // imageUrl: '/images/weather-dashboard.png',
+  // },
 ];
 
 export const experiences: Experience[] = [

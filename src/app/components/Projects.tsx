@@ -15,16 +15,16 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex justify-center  gap-8">
           {projects.map((project) => (
             <div key={project.id} className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-48 bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center">
                 {project.imageUrl ? (
-                  <Image
+                  <Image 
                     src={project.imageUrl}
                     alt={project.title}
-                    width={370}
-                    height={150}
+                    width={480}
+                    height={480}
                     className="object-cove mt-5"
                   />
                 ) : (
