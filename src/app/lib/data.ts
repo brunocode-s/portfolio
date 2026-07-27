@@ -38,24 +38,25 @@ export const experiences: Experience[] = [
     position: 'Intern Frontend Developer',
     duration: '2024 - Present',
     description: [
+      'Collaborated with design teams to implement pixel-perfect UI components',
       // 'Led development of customer-facing web applications serving 100K+ users',
       // 'Mentored junior developers and established coding standards',
       // 'Implemented performance optimizations reducing load times by 40%',
     ],
     technologies: ['React', 'TypeScript'],
   },
-  {
-    id: '2',
-    company: 'Digital Solutions Ltd.',
-    position: 'Full Stack Developer',
-    duration: '2025',
-    description: [
-      // 'Built and maintained multiple client projects using modern web technologies',
-      'Collaborated with design teams to implement pixel-perfect UI components',
-      // 'Developed RESTful APIs and database schemas',
-    ],
-    technologies: ['React', 'Node.js', '', ''],
-  },
+  // {
+  //   id: '2',
+  //   company: 'Digital Solutions Ltd.',
+  //   position: 'Full Stack Developer',
+  //   duration: '2025',
+  //   description: [
+  //     // 'Built and maintained multiple client projects using modern web technologies',
+  //     'Collaborated with design teams to implement pixel-perfect UI components',
+  //     // 'Developed RESTful APIs and database schemas',
+  //   ],
+  //   technologies: ['React', 'Node.js', '', ''],
+  // },
 ];
 
 export const skills: Skill[] = [
