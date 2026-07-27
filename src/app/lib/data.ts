@@ -55,7 +55,7 @@ export const experiences: Experience[] = [
   {
     id: "2",
     company: "Tripplex Technologies.",
-    position: "Full Stack Developer",
+    position: "Frontend Developer",
     duration: "Present",
     description: [
       "Building Loftspace, a hotel and restaurant business management platform.",
