@@ -8,7 +8,11 @@ export const metadata = {
   title: 'Alain Bruno - FRONT-END Developer',
   description: 'Portfolio website of Alain Bruno, a passionate front-end developer specializing in modern web technologies.',
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: '/apple-touch-icon.png',
   },
 }
 
