@@ -1,172 +1,48 @@
-'use client'
+const stats = [
+  { value: '5+', label: 'Years experience' },
+  { value: '3.79', label: 'CGPA, BSc Computer Science' },
+  { value: '2', label: 'Current roles' },
+]
 
-import Image from 'next/image'
-import styled from 'styled-components'
-
-/* === Styled Components === */
-const Section = styled.section`
-  padding: 5rem 0;
-  background: white;
-`
-
-const Container = styled.div`
-  max-width: 1280px;
-  padding: 0 1rem;
-
-  @media (min-width: 640px) {
-    padding: 0 1.5rem;
-  }
-
-  @media (min-width: 1024px) {
-    padding: 0 2rem;
-  }
-  margin: 0 auto;
-`
-
-const Header = styled.div`
-  text-align: center;
-  margin-bottom: 4rem;
-`
-
-const Title = styled.h2`
-  font-size: 1.875rem; /* text-3xl */
-  font-weight: 700;
-  color: #111827;
-  margin-bottom: 1rem;
-
-  @media (min-width: 768px) {
-    font-size: 2.25rem; /* text-4xl */
-  }
-`
-
-const Subtitle = styled.p`
-  font-size: 1.125rem;
-  color: #4b5563;
-  max-width: 640px;
-  margin: 0 auto;
-`
-
-const Grid = styled.div`
-  display: grid;
-  gap: 3rem;
-  align-items: center;
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-`
-
-const TextBlock = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-`
-
-const Paragraph = styled.p`
-  color: #374151;
-  line-height: 1.75;
-`
-
-const BadgeContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-`
-
-const Badge = styled.div`
-  background: var(--color-primary-50);
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-
-  span {
-    color: var(--color-primary-700);
-    font-weight: 500;
-  }
-`
-
-const ImageWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-`
-
-const ProfileCircle = styled.div`
-  position: relative;
-  width: 20rem;
-  height: 20rem;
-  background: linear-gradient(to bottom right, var(--color-primary-200), var(--color-primary-400));
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
-
-const InnerCircle = styled.div`
-  width: 18rem;
-  height: 18rem;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
-
-const ProfileImage = styled(Image)`
-  border-radius: 6rem;
-  object-fit: cover;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-`
-
-/* === Component === */
 const About = () => {
   return (
-    <Section id="about">
-      <Container>
-        <Header>
-          <Title>About Me</Title>
-          <Subtitle>
+    <section id="about" className="section bg-white text-gray-900">
+      <div className="container-max-width section-padding">
+        <div className="text-center mb-10 md:mb-14">
+          <h2 className="section-title">About Me</h2>
+          <p className="section-subtitle">
             I&apos;m a passionate developer with expertise in modern web technologies
-          </Subtitle>
-        </Header>
+          </p>
+        </div>
 
-        <Grid>
-          <TextBlock>
-            <Paragraph>
-              With over 3 years of experience in web development, I specialize in creating 
-              scalable, user-friendly applications using cutting-edge technologies. My journey 
-              began with getting a Computer Science degree and has evolved through hands-on experience 
-              with various frameworks and tools.
-            </Paragraph>
-            <Paragraph>
-              I&apos;m passionate about clean code, performance optimization, and creating 
-              seamless user experiences. When I&apos;m not coding, you&apos;ll find me exploring 
-              new technologies, contributing to open-source projects, or sharing knowledge 
-              with the developer community.
-            </Paragraph>
-            <BadgeContainer>
-              <Badge>
-                <span>3+ Years Experience</span>
-              </Badge>
-              <Badge>
-                <span>20+ Projects Completed</span>
-              </Badge>
-            </BadgeContainer>
-          </TextBlock>
+        <div className="max-w-3xl mx-auto space-y-5 text-center text-gray-600 leading-relaxed text-base sm:text-lg">
+          <p>
+            I&apos;m a front-end developer with 5+ years of hands-on experience building
+            responsive web applications with React and JavaScript. I currently work at
+            Tripplex Technologies on Loftspace and continue at DigitalFigures on an
+            education product.
+          </p>
+          <p>
+            I graduated with a BSc in Computer Science (CGPA 3.79/5.0) from the Federal
+            University of Oye-Ekiti in July 2026, and I&apos;ve delivered freelance projects
+            for international clients. I care about clean, performant code and seamless
+            user experiences.
+          </p>
+        </div>
 
-          <ImageWrapper>
-            <ProfileCircle>
-              <InnerCircle>
-                <ProfileImage
-                  src="/assets/my_profile.jpeg"
-                  alt="Profile Picture"
-                  width={280}
-                  height={150}
-                />
-              </InnerCircle>
-            </ProfileCircle>
-          </ImageWrapper>
-        </Grid>
-      </Container>
-    </Section>
+        <div className="mt-10 md:mt-14 grid gap-4 sm:grid-cols-3 max-w-4xl mx-auto">
+          {stats.map((stat) => (
+            <div
+              key={stat.label}
+              className="rounded-3xl bg-black p-6 sm:p-8 text-center text-white"
+            >
+              <p className="text-4xl sm:text-5xl font-bold">{stat.value}</p>
+              <p className="mt-2 text-sm text-gray-400">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 

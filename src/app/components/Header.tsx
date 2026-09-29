@@ -1,71 +1,63 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import DarkModeToggle from './DarkMode'
+
+const navItems = [
+  { href: '#about', label: 'About' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#contact', label: 'Contact' },
+]
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  const navItems = [
-    { href: '#about', label: 'About' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#experience', label: 'Experience' },
-    { href: '#contact', label: 'Contact' },
-  ]
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 adaptive-text ${
-      isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'
-    }`}>
-      <div className="container-max-width section-padding">
-        <div className="flex items-center justify-between h-16">
-          <a href="https://github.com/brunocode-s" className="text-xl font-bold adaptive-text">
+    <header className="fixed top-3 sm:top-4 inset-x-0 z-50 px-3 sm:px-6">
+      <div
+        className={`mx-auto max-w-5xl bg-black/90 backdrop-blur-md text-white border border-white/10 shadow-lg shadow-black/20 ${
+          isMenuOpen ? 'rounded-3xl' : 'rounded-full'
+        }`}
+      >
+        <div className="flex items-center justify-between h-14 pl-5 pr-3 sm:pl-6 sm:pr-4">
+          <a href="#" className="text-base sm:text-lg font-bold">
             Alain Bruno
           </a>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          {/* Desktop navigation */}
+          <nav className="hidden md:flex items-center gap-1" aria-label="Main">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-[18px] hover:text-primary-600 underline-hove adaptive-text"
+                className="rounded-full px-4 py-2 text-sm text-gray-300 hover:bg-white/10 hover:text-white transition-colors"
               >
                 {item.label}
               </a>
             ))}
           </nav>
-          {/* Mobile Menu Button */}
-          <div className="flex items-center">
-            <DarkModeToggle />
-            <button
-              className="md:hidden adaptive-text"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden rounded-full p-2 hover:bg-white/10 transition-colors"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isMenuOpen}
+          >
+            {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden py-4 border-t">
+          <nav className="md:hidden px-3 pb-3 border-t border-white/10 pt-2" aria-label="Mobile">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="block py-2 text-gray-600 hover:text-primary-600 transition-colors"
+                className="block rounded-2xl px-4 py-3 text-gray-300 hover:bg-white/10 hover:text-white transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}

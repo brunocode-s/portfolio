@@ -1,63 +1,64 @@
-import { projects } from '../lib/data'
-import Image from 'next/image'
-import { Github, ExternalLink } from 'lucide-react'
+import { projects } from "../lib/data";
+// import Image from "next/image";
+import { Github, ExternalLink } from "lucide-react";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="section bg-black text-white">
       <div className="container-max-width section-padding">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Featured Projects
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <div className="text-center mb-10 md:mb-14">
+          <h2 className="section-title">Featured Projects</h2>
+          <p className="section-subtitle">
             A showcase of my recent work and personal projects
           </p>
         </div>
 
-        <div className="flex justify-center  gap-8">
+        <div className="flex flex-wrap justify-center gap-6">
           {projects.map((project) => (
-            <div key={project.id} className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center">
+            <article
+              key={project.id}
+              className="w-full max-w-md overflow-hidden rounded-3xl border border-white/10 bg-neutral-900"
+            >
+              {/* <div className="relative aspect-video bg-neutral-800">
                 {project.imageUrl ? (
-                  <Image 
+                  <Image
                     src={project.imageUrl}
                     alt={project.title}
-                    width={480}
-                    height={480}
-                    className="object-cove mt-5"
+                    fill
+                    sizes="(min-width: 448px) 448px, 100vw"
+                    className="object-cover"
                   />
                 ) : (
-                  <div className="text-gray-400">No Image Available</div>
+                  <div className="flex h-full items-center justify-center text-neutral-500">
+                    No image available
+                  </div>
                 )}
-              </div>
-              
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              </div> */}
+
+              <div className="p-5 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 mb-4 line-clamp-3">
-                  {project.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-4">
+                <p className="text-gray-400 mb-4">{project.description}</p>
+
+                <div className="flex flex-wrap gap-2 mb-5">
                   {project.technologies.map((tech, index) => (
                     <span
                       key={index}
-                      className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm"
+                      className="rounded-full bg-white/10 px-3 py-1 text-xs sm:text-sm text-gray-300"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
-                
-                <div className="flex gap-4">
+
+                <div className="flex gap-5">
                   {project.githubUrl && (
                     <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-600 hover:text-primary-600 transition-colors"
+                      className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
                     >
                       <Github size={16} />
                       Code
@@ -68,7 +69,7 @@ const Projects = () => {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-600 hover:text-primary-600 transition-colors"
+                      className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
                     >
                       <ExternalLink size={16} />
                       Live Demo
@@ -76,12 +77,12 @@ const Projects = () => {
                   )}
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
