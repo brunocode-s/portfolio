@@ -6,7 +6,14 @@ export const projects: Project[] = [
     title: "Tesla Tweet Sentiment Analyzer",
     description:
       "Hybrid ML sentiment analysis app combining VADER and Logistic Regression (TF-IDF), with an interactive React dashboard, file upload, visual analytics and Excel report export. Freelance client project.",
-    technologies: ["React", "FastAPI", "Python", "NLTK", "scikit-learn", "pandas"],
+    technologies: [
+      "React",
+      "FastAPI",
+      "Python",
+      "NLTK",
+      "scikit-learn",
+      "pandas",
+    ],
   },
   {
     id: "2",
@@ -28,8 +35,8 @@ export const projects: Project[] = [
       "Node.js",
       "Express",
     ],
-    githubUrl: "https://github.com/brunocode-s/OVS-frontend.git",
-    liveUrl: "https://ovs-frontend-drab.vercel.app/",
+    githubUrl: "https://github.com/brunocode-s/voting-frontend.git",
+    liveUrl: "https://voting-frontend-mauve.vercel.app/",
     imageUrl: "/assets/ovs.png",
   },
 ];
@@ -101,7 +108,15 @@ export const skills: Skill[] = [
   },
   {
     category: "Backend & Data",
-    technologies: ["Python", "FastAPI", "Node.js", "Express", "PostgreSQL", "SQLite", ".NET MAUI"],
+    technologies: [
+      "Python",
+      "FastAPI",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "SQLite",
+      ".NET MAUI",
+    ],
   },
   {
     category: "Tools & Other",
