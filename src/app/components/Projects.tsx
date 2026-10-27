@@ -1,6 +1,6 @@
 import { projects } from "../lib/data";
-// import Image from "next/image";
 import { Github, ExternalLink } from "lucide-react";
+import LivePreview from "./LivePreview";
 
 const Projects = () => {
   return (
@@ -19,21 +19,13 @@ const Projects = () => {
               key={project.id}
               className="w-full max-w-md overflow-hidden rounded-3xl border border-white/10 bg-neutral-900"
             >
-              {/* <div className="relative aspect-video bg-neutral-800">
-                {project.imageUrl ? (
-                  <Image
-                    src={project.imageUrl}
-                    alt={project.title}
-                    fill
-                    sizes="(min-width: 448px) 448px, 100vw"
-                    className="object-cover"
-                  />
-                ) : (
-                  <div className="flex h-full items-center justify-center text-neutral-500">
-                    No image available
-                  </div>
-                )}
-              </div> */}
+              {project.liveUrl ? (
+                <LivePreview url={project.liveUrl} title={project.title} />
+              ) : (
+                <div className="flex aspect-video items-center justify-center bg-neutral-800 text-neutral-500">
+                  No live preview available
+                </div>
+              )}
 
               <div className="p-5 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">

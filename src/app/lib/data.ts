@@ -3,27 +3,6 @@ import { Project, Experience, Skill } from "../../../types";
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Tesla Tweet Sentiment Analyzer",
-    description:
-      "Hybrid ML sentiment analysis app combining VADER and Logistic Regression (TF-IDF), with an interactive React dashboard, file upload, visual analytics and Excel report export. Freelance client project.",
-    technologies: [
-      "React",
-      "FastAPI",
-      "Python",
-      "NLTK",
-      "scikit-learn",
-      "pandas",
-    ],
-  },
-  {
-    id: "2",
-    title: "MHike - Cross-Platform Hiking Tracker",
-    description:
-      "Mobile app for an international client to log hikes, track statistics and manage observations, with full CRUD through a SQLite database service.",
-    technologies: [".NET MAUI", "C#", "SQLite"],
-  },
-  {
-    id: "3",
     title: "Online Voting System",
     description:
       "Full-stack voting solution with fingerprint authentication and admin dashboard.",
@@ -38,6 +17,43 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/brunocode-s/voting-frontend.git",
     liveUrl: "https://voting-frontend-mauve.vercel.app/",
     imageUrl: "/assets/ovs.png",
+  },
+  {
+    id: "2",
+    title: "MILAGBA.INC - Music Releases & Picks Site",
+    description:
+      "Music site for sharing song picks and promoting releases, with countdowns and preview clips for upcoming tracks, embedded players once released, and a private admin area to manage all content without touching the code.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Firebase",
+      "Firestore",
+      "Vercel",
+    ],
+    githubUrl: "https://github.com/brunocode-s/milagba.inc.git",
+    liveUrl: "https://milagbainc-8a2e-eight.vercel.app",
+  },
+  {
+    id: "3",
+    title: "Tesla Tweet Sentiment Analyzer",
+    description:
+      "Hybrid ML sentiment analysis app combining VADER and Logistic Regression (TF-IDF), with an interactive React dashboard, file upload, visual analytics and Excel report export. Freelance client project.",
+    technologies: [
+      "React",
+      "FastAPI",
+      "Python",
+      "NLTK",
+      "scikit-learn",
+      "pandas",
+    ],
+  },
+  {
+    id: "4",
+    title: "MHike - Cross-Platform Hiking Tracker",
+    description:
+      "Mobile app for an international client to log hikes, track statistics and manage observations, with full CRUD through a SQLite database service.",
+    technologies: [".NET MAUI", "C#", "SQLite"],
   },
 ];
 
