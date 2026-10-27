@@ -3,16 +3,18 @@ import { Project, Experience, Skill } from "../../../types";
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Online Voting System",
+    title: "Secure Voting System",
     description:
-      "Full-stack voting solution with fingerprint authentication and admin dashboard.",
+      "Full-stack e-voting platform with layered voter verification (email, NIN and WebAuthn biometrics), machine-learning fraud detection, optional blockchain vote recording, and an admin dashboard with live results and audit logs.",
     technologies: [
       "React",
-      "Tailwind CSS",
-      "Socket.io",
+      "Vite",
+      "styled-components",
+      "Flask",
       "PostgreSQL",
-      "Node.js",
-      "Express",
+      "scikit-learn",
+      "WebAuthn",
+      "web3.py",
     ],
     githubUrl: "https://github.com/brunocode-s/voting-frontend.git",
     liveUrl: "https://voting-frontend-mauve.vercel.app/",
